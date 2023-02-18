@@ -1,0 +1,739 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ejercicios y Evaluaciones para Física General: Mecánica</title>
+<style>
+body {
+background-color: lightblue;
+font-family: Helvetica;
+}
+
+#main {
+width: 80%;
+max-width: 950px;
+border: 1px gray solid;
+margin: auto;
+padding: 10px;
+background-color: white;
+border-radius: 10px;
+}
+
+#header {
+margin-top: 0;
+border: 2px solid black;
+padding: 5px;
+height: 250px;
+background: beige;
+background-image: url("code_mechanics.jpg");
+color: white;
+}
+
+label {
+display: block;
+}
+
+input {
+width: 30px;
+margin-left: 20px;
+}
+
+h2 {
+clear: both;
+padding-top: 20px;
+}
+
+button {
+width: 100px;
+margin-top: 20px;
+}
+
+</style>
+
+
+
+
+</head>
+<body>
+<div id="main">
+<div id="header">
+<h1>Fenómenos Mecánicos</h1>
+</div>
+<form id="form1">
+
+
+<h1>Presentación</h1>
+<p>Estos ejercicios tienen como finalidad apoyar a estudiantes del primer año universitario en un curso de Física General. Puede servir también como apoyo para recordar y reforzar los conocimientos de física adquiridos previamente en el nivel de Bachillerato.</p>
+
+<p>Esta serie de ejercicios corresponde a la unidad 'Fenómenos Mecánicos'. </p>
+
+<p>Autor: Juan José Jiménez Torres </p>
+
+
+<p> Los ejercicios y sus respectivas figuras, se encuentran basados en ejercicios planteados en distintas fuentes bibliográficas como los textos de Schad (1996), Resnick y Halliday (1981), Tippens (2001), Benson (1999, 1991) y Hewitt (1999). Estos ejercicios de física también fueron empleados para el trabajo que desarrollé en Jiménez-Torres (2006). </p>
+
+
+<A HREF="https://arxiv.org/abs/2302.08006"> Artículo publicado en arXiv: Physics Education (physics.ed-ph) </A>
+
+
+
+
+
+<h2>1) Cuando un autobús que se encuentra en reposo es golpeado por detrás varios pasajeros pueden sufrir lesiones en el cuello. ¿Cuál es la ley del movimiento de Newton que interviene y explica mejor este caso? </h2>
+
+<label for="var_string"><input type="radio" name="p1" value="0" id="var_string" /> a) Ley de la gravitación. </label>
+
+<label for="var_join"><input type="radio" name="p1" value="10" id="var_join" /> b) Primera ley de Newton. </label>
+
+<label for="var_info"><input type="radio" name="p1" value="0" id="var_info" /> c) Segunda ley de Newton. </label>
+
+<label for="var_condition"><input type="radio" name="p1" value="0" id="var_condition"/> d) Tercera ley de Newton. </label>
+
+<label for="var_condition2"><input type="radio" name="p1" value="0" id="var_condition2"/> e) Ley del cuadrado inverso. </label>
+
+
+
+
+<h2>2) Si un objeto que se encuentra en un marco de referencia inercial permanece en reposo o continúa moviéndose con una velocidad constante, entonces significa que ninguna fuerza neta está actuando sobre el objeto. </h2>
+<label for="sub_string"><input type="radio" name="p2" value="0" id="sub_string"/> Falso. </label>
+<label for="sub_join"><input type="radio" name="p2" value="10" id="sub_join"/> Verdadero. </label>
+
+
+<h2>3) La primera ley de Newton es válida en un marco de referencia inercial. </h2>
+<label for="sub_string"><input type="radio" name="p3" value="0" id="sub_string"/> Falso. </label>
+<label for="sub_join"><input type="radio" name="p3" value="10" id="sub_join"/> Verdadero. </label>
+
+
+
+<h2>4) Una persona M que va a bordo del metro de la Ciudad de México, dice ver pasar rápidamente los anuncios de publicidad que hay en una estación. Otra persona N que está parada junto a esos anuncios de publicidad dice que ve pasar rápidamente el metro. Para resolver esta incertidumbre debemos asumir que: </h2>
+<label for="sub_string"><input type="radio" name="p4" value="0" id="sub_string"/> a) La persona M que va a bordo del metro es la que tiene la razón al afirmar que ve pasar rápidamente a los anuncios de publicidad. </label>
+<label for="sub_join"><input type="radio" name="p4" value="0" id="sub_join"/> b) La persona N que está parada junto a los anuncios es la que tiene la razón al afirmar que ve pasar al metro rápidamente. </label>
+<label for="sub_info"><input type="radio" name="p4" value="0" id="sub_info" /> c) La persona M tiene la razón al afirmar que el metro se mueve, ya que él sabe que el metro tiene movimiento. </label>
+<label for="sub_condition"><input type="radio" name="p4" value="10" id="sub_condition" /> d) Si el marco de referencia es el metro, entonces la persona M ve que se mueven los anuncios; y si se toma como marco a los anuncios,  la persona N ve moverse al metro. </label>
+
+
+<h2>5) La aceleración de la luz es cero ya que viaja en línea recta con una rapidez constante de aproximadamente 300 000 km/s. </h2>
+<label for="sub_string"><input type="radio" name="p5" value="0" id="sub_string"/> Falso. </label>
+<label for="sub_join"><input type="radio" name="p5" value="10" id="sub_join"/> Verdadero. </label>
+
+
+<h2>6) Cuando una pelota se lanza en línea recta hacia arriba, ¿cuánto disminuye su rapidez cada segundo? </h2>
+<label for="sub_string"><input type="radio" name="p6" value="10" id="sub_string"/> a) 9.81 m/s. </label>
+<label for="sub_join"><input type="radio" name="p6" value="0" id="sub_join"/> b) –9.81 m/s. </label>
+<label for="sub_info"><input type="radio" name="p6" value="0" id="sub_info" /> c) No hay cambio en la rapidez. </label>
+<label for="sub_condition"><input type="radio" name="p6" value="0" id="sub_condition" /> d) Depende de la velocidad inicial. </label>
+<label for="sub_condition2"><input type="radio" name="p6" value="0" id="sub_condition2" /> e) Depende de la altura alcanzada. </label>
+
+
+<h2>7) Cuando una pelota se lanza hacia arriba en línea recta y una vez que la pelota alcanza el punto más alto y comienza a bajar, ¿cuánto aumenta su rapidez cada segundo? </h2>
+<label for="sub_string"><input type="radio" name="p7" value="0" id="sub_string"/> a) 9.81 m/s. </label>
+<label for="sub_join"><input type="radio" name="p7" value="10" id="sub_join"/> b) –9.81 m/s. </label>
+<label for="sub_info"><input type="radio" name="p7" value="0" id="sub_info" /> c) No hay cambio en la rapidez. </label>
+<label for="sub_condition"><input type="radio" name="p7" value="0" id="sub_condition" /> d) Depende de la altura a la que se encuentre. </label>
+<label for="sub_condition2"><input type="radio" name="p7" value="0" id="sub_condition2" /> e) Depende de la velocidad con la que llegue a la superficie. </label>
+
+
+
+<h2>8) Cuando se lanza una pelota en línea recta hacia arriba. ¿Cuál es su velocidad instantánea en el punto más alto? </h2>
+<label for="sub_string"><input type="radio" name="p8" value="10" id="sub_string"/> a) 0 m/s. </label>
+<label for="sub_join"><input type="radio" name="p8" value="0" id="sub_join"/> b) 9.81 m/s hacia arriba. </label>
+<label for="sub_info"><input type="radio" name="p8" value="0" id="sub_info" /> c) 9.81 m/s hacia abajo. </label>
+<label for="sub_condition"><input type="radio" name="p8" value="0" id="sub_condition" /> d) Depende de la altura alcanzada. </label>
+<label for="sub_condition2"><input type="radio" name="p8" value="0" id="sub_condition2" /> e) Depende de la velocidad inicial. </label>
+
+
+
+
+
+<h2>9) Las magnitudes de Tiempo, Temperatura, Volumen, Energía Cinética, Energía potencial y Distancia son magnitudes vectoriales. </h2>
+<label for="sub_string"><input type="radio" name="p9" value="10" id="sub_string"/> Falso. </label>
+<label for="sub_join"><input type="radio" name="p9" value="0" id="sub_join"/> Verdadero. </label>
+
+
+<h2>10) Las magnitudes de Ímpetu, Velocidad, Aceleración, Desplazamiento, y Fuerza son magnitudes escalares. </h2>
+<label for="sub_string"><input type="radio" name="p10" value="10" id="sub_string"/> Falso. </label>
+<label for="sub_join"><input type="radio" name="p10" value="0" id="sub_join"/> Verdadero. </label>
+
+
+
+
+<h2>11) El ímpetu o cantidad de movimiento de un objeto se define operacionalmente como el producto de su masa por su velocidad. </h2>
+<label for="sub_string"><input type="radio" name="p11" value="0" id="sub_string"/> Falso. </label>
+<label for="sub_join"><input type="radio" name="p11" value="10" id="sub_join"/> Verdadero. </label>
+
+
+<h2>12) Un atleta de 70 kg de masa, puede correr a 10 m/s. ¿Cuál es su ímpetu lineal o cantidad de movimiento? </h2>
+<label for="sub_string"><input type="radio" name="p12" value="0" id="sub_string"/> a) 7 kg m/s. </label>
+<label for="sub_join"><input type="radio" name="p12" value="10" id="sub_join"/> b) 700 kg m/s. </label>
+<label for="sub_info"><input type="radio" name="p12" value="0" id="sub_info" /> c) 0.14 kg m/s. </label>
+<label for="sub_condition"><input type="radio" name="p12" value="0" id="sub_condition" /> d) 80 kg m/s. </label>
+<label for="sub_condition2"><input type="radio" name="p12" value="0" id="sub_condition2" /> e) 60 kg m/s. </label>
+
+
+<h2>13) ¿Qué velocidad se requiere para que una bala de 20 g tenga un ímpetu lineal o cantidad de movimiento de 1000 kg m/s? </h2>
+<label for="sub_string"><input type="radio" name="p13" value="10" id="sub_string"/> a) 50 000 m/s. </label>
+<label for="sub_join"><input type="radio" name="p13" value="0" id="sub_join"/> b) 50 m/s. </label>
+<label for="sub_info"><input type="radio" name="p13" value="0" id="sub_info" /> c) 20 000 m/s. </label>
+<label for="sub_condition"><input type="radio" name="p13" value="0" id="sub_condition" /> d) 0.02 m/s. </label>
+<label for="sub_condition2"><input type="radio" name="p13" value="0" id="sub_condition2" /> e) 20 m/s. </label>
+
+
+
+<h2>14) ¿Qué velocidad se necesita para que un automóvil de 2000 kg tenga un ímpetu lineal o cantidad de movimiento de 1000 kg m/s? </h2>
+<label for="sub_string"><input type="radio" name="p14" value="10" id="sub_string"/> a) 0.50 m/s. </label>
+<label for="sub_join"><input type="radio" name="p14" value="0" id="sub_join"/> b) 2  m/s. </label>
+<label for="sub_info"><input type="radio" name="p14" value="0" id="sub_info" /> c) 1 000 m/s. </label>
+<label for="sub_condition"><input type="radio" name="p14" value="0" id="sub_condition" /> d) 3 000 m/s. </label>
+<label for="sub_condition2"><input type="radio" name="p14" value="0" id="sub_condition2" /> e) 200 000 m/s. </label>
+
+
+<h2>15) Aplicando conservación del ímpetu o cantidad de movimiento, resolver el siguiente problema. Un pez de 5 kg nada a 1 m/s y se come un pez pequeño de 1 kg que se encuentra en reposo. ¿Cuál es la rapidez del pez grande inmediatamente después de comerse al pez pequeño?  </h2>
+<label for="sub_string"><input type="radio" name="p15" value="0" id="sub_string"/> a) 1 m/s. </label>
+<label for="sub_join"><input type="radio" name="p15" value="0" id="sub_join"/> b) 0.17 m/s. </label>
+<label for="sub_info"><input type="radio" name="p15" value="0" id="sub_info" /> c) 1.25 m/s. </label>
+<label for="sub_condition"><input type="radio" name="p15" value="0" id="sub_condition" /> d) 6 m/s. </label>
+<label for="sub_condition2"><input type="radio" name="p15" value="10" id="sub_condition2" /> e) 0.83 m/s. </label>
+
+
+
+<h2>16) Una caja de 200 g cae verticalmente y repentinamente en un carrito de 2.5 kg que viaja libremente a una velocidad de 2 m/s sobre una superficie horizontal. ¿Cuál es la velocidad final del carrito? </h2>
+<label for="sub_string"><input type="radio" name="p16" value="10" id="sub_string"/> a) 1.85 m/s. </label>
+<label for="sub_join"><input type="radio" name="p16" value="0" id="sub_join"/> b) 2.17 m/s. </label>
+<label for="sub_info"><input type="radio" name="p16" value="0" id="sub_info" /> c) 2 m/s. </label>
+<label for="sub_condition"><input type="radio" name="p16" value="0" id="sub_condition" /> d) –1.85 m/s. </label>
+<label for="sub_condition2"><input type="radio" name="p16" value="0" id="sub_condition2" /> e) –2.17 m/s. </label>
+
+
+
+<h2>17) Un cubo de plastilina de 2 kg que tiene una velocidad de 3 m/s y choca con otro cubo de plastilina de 3 kg que está en reposo. ¿Cuál es la rapidez de los dos cubos que han quedado unidos inmediatamente después de la colisión? </h2>
+<label for="sub_string"><input type="radio" name="p17" value="0" id="sub_string"/> a) 2 m/s. </label>
+<label for="sub_join"><input type="radio" name="p17" value="10" id="sub_join"/> b) 1.20 m/s. </label>
+<label for="sub_info"><input type="radio" name="p17" value="0" id="sub_info" /> c) 6 m/s. </label>
+<label for="sub_condition"><input type="radio" name="p17" value="0" id="sub_condition" /> d) 3 m/s. </label>
+<label for="sub_condition2"><input type="radio" name="p17" value="0" id="sub_condition2" /> e) 4.50  m/s. </label>
+
+
+
+<h2>18) Una fuerza puede provocar un cambio en el ímpetu respecto al tiempo.  </h2>
+<label for="sub_string"><input type="radio" name="p18" value="0" id="sub_string"/> Falso. </label>
+<label for="sub_join"><input type="radio" name="p18" value="10" id="sub_join"/> Verdadero. </label>
+
+
+
+<h2>19) Un trineo tiene una masa de 250 kg. Sobre él actúa una fuerza constante durante 60 s. Su rapidez inicial es de 6 m/s y su rapidez final es de 28 m/s. ¿Cuál es la magnitud de la fuerza? </h2>
+<label for="sub_string"><input type="radio" name="p19" value="0" id="sub_string"/> a) 681.82  N. </label>
+<label for="sub_join"><input type="radio" name="p19" value="0" id="sub_join"/> b) 5.28 N. </label>
+<label for="sub_info"><input type="radio" name="p19" value="10" id="sub_info" /> c) 91.67 N. </label>
+<label for="sub_condition"><input type="radio" name="p19" value="0" id="sub_condition" /> d) 0.19 N. </label>
+<label for="sub_condition2"><input type="radio" name="p19" value="0" id="sub_condition2" /> e) 0.0015 N. </label>
+
+
+
+
+<h2>20) Una pendiente positiva en una gráfica x (posición) contra t (tiempo) implica movimiento alejándose del origen. </h2>
+<label for="sub_string"><input type="radio" name="p20" value="0" id="sub_string"/> Falso. </label>
+<label for="sub_join"><input type="radio" name="p20" value="10" id="sub_join"/> Verdadero. </label>
+
+
+
+<h2>21) Una piedra se arroja hacia arriba y luego cae de regreso al suelo. ¿Cuál de las gráficas siguientes representa la variación de su velocidad con el tiempo? </h2>
+<label for="sub_string"><input type="radio" name="p21" value="0" id="sub_string"/> a) <IMG SRC="25_grafica1.jpg" WIDTH=150 HEIGHT=128> </label>
+<label for="sub_join"><input type="radio" name="p21" value="0" id="sub_join"/> b) <IMG SRC="25_grafica2.jpg" WIDTH=150 HEIGHT=128> </label>
+<label for="sub_info"><input type="radio" name="p21" value="0" id="sub_info" /> c) <IMG SRC="25_grafica3.jpg" WIDTH=150 HEIGHT=128> </label>
+<label for="sub_condition"><input type="radio" name="p21" value="0" id="sub_condition" /> d) <IMG SRC="25_grafica4.jpg" WIDTH=150 HEIGHT=128> </label>
+<label for="sub_condition2"><input type="radio" name="p21" value="10" id="sub_condition2" /> e) <IMG SRC="25_grafica5.jpg" WIDTH=150 HEIGHT=128> </label>
+
+
+
+
+<h2>22) Cuando un tren recorre una trayectoria en línea recta, recorre distancias iguales por cada segundo, y su velocidad permanece constante, entonces decimos que su movimiento corresponde a un movimiento rectilíneo uniformemente acelerado. </h2>
+<label for="sub_string"><input type="radio" name="p22" value="10" id="sub_string"/> Falso. </label>
+<label for="sub_join"><input type="radio" name="p22" value="0" id="sub_join"/> Verdadero. </label>
+
+
+
+<h2>23) La segunda ley de Newton que relaciona la aceleración de un objeto con la fuerza neta que actúa sobre él mediante la expresión matemática F = m a, es válida en cualquier marco de referencia, inercial o no inercial. </h2>
+<label for="sub_string"><input type="radio" name="p23" value="10" id="sub_string"/> Falso. </label>
+<label for="sub_join"><input type="radio" name="p23" value="0" id="sub_join"/> Verdadero. </label>
+
+
+<h2>24) Cuando un objeto se mueve con movimiento circular uniforme su aceleración es constante. </h2>
+<label for="sub_string"><input type="radio" name="p24" value="0" id="sub_string"/> Falso. </label>
+<label for="sub_join"><input type="radio" name="p24" value="10" id="sub_join"/> Verdadero. </label>
+
+
+
+
+
+<h2>25) El electrón de un átomo de hidrógeno gira alrededor de un protón estacionario a una distancia de 5.3X10<sup>-11</sup> m a una velocidad de 2.2X10<sup>6</sup> m/s. ¿Cuál es la fuerza centrípeta sobre el electrón?.  </h2>
+<label for="sub_string"><input type="radio" name="p25" value="10" id="sub_string"/> a) 8.3X10<sup>-8</sup> N </label>
+<label for="sub_join"><input type="radio" name="p25" value="0" id="sub_join"/> b) 3.4X10<sup>-44</sup> N </label>
+<label for="sub_info"><input type="radio" name="p25" value="0" id="sub_info" /> c) 7.5X10<sup>-38</sup> N </label>
+<label for="sub_condition"><input type="radio" name="p25" value="0" id="sub_condition" /> d) 1.1X10<sup>-57</sup> N </label>
+<label for="sub_condition2"><input type="radio" name="p25" value="0" id="sub_condition2" /> e) 1.0X10<sup>50</sup> N </label>
+
+
+
+
+
+<h2>26) Para deducir que la fuerza es igual al producto de la masa por la aceleración a partir de que el impulso es igual al cambio en el ímpetu respecto al tiempo; la masa tiene que ser siempre constante. </h2>
+<label for="sub_string"><input type="radio" name="p26" value="0" id="sub_string"/> Falso. </label>
+<label for="sub_join"><input type="radio" name="p26" value="10" id="sub_join"/> Verdadero. </label>
+
+
+<h2>27) Si un aeroplano recorre una distancia de 38.5 km en un tiempo de 2 h 49 min, ¿Cuál fue su velocidad promedio?. </h2>
+<label for="sub_string"><input type="radio" name="p27" value="0" id="sub_string"/> a) 19.25 km/h </label>
+<label for="sub_join"><input type="radio" name="p27" value="0" id="sub_join"/> b) 47.14 km/h </label>
+<label for="sub_info"><input type="radio" name="p27" value="0" id="sub_info" /> c) 32.53 km/h </label>
+<label for="sub_condition"><input type="radio" name="p27" value="10" id="sub_condition" /> d) 13.67 km/h </label>
+<label for="sub_condition2"><input type="radio" name="p27" value="0" id="sub_condition2" /> e) 45.29 km/h </label>
+
+
+<h2>28) ¿Cuál es la fuerza que actúa sobre un avión de 12500 kg si es lanzado desde el reposo hasta alcanzar una velocidad de 250 km/h en 2.2 segundos? </h2>
+<label for="sub_string"><input type="radio" name="p28" value="0" id="sub_string"/> a) 1.42X10<sup>6</sup> N </label>
+<label for="sub_join"><input type="radio" name="p28" value="0" id="sub_join"/> b) 6.88X10<sup>6</sup> N </label>
+<label for="sub_info"><input type="radio" name="p28" value="10" id="sub_info" /> c) 3.95X10<sup>5</sup> N </label>
+<label for="sub_condition"><input type="radio" name="p28" value="0" id="sub_condition" /> d) 396 N </label>
+<label for="sub_condition2"><input type="radio" name="p28" value="0" id="sub_condition2" /> e) 2.52X10<sup>-3</sup> N </label>
+
+
+<h2>29) ¿Cuál es la fuerza que actúa sobre un avión que tiene una velocidad de 180 km/h y una masa de 12 500 kg, si se le detiene completamente por una red especial en una distancia de 40 m? </h2>
+<label for="sub_string"><input type="radio" name="p29" value="0" id="sub_string"/> a) 5.06X10<sup>6</sup> N </label>
+<label for="sub_join"><input type="radio" name="p29" value="10" id="sub_join"/> b) 3.91X10<sup>5</sup> N </label>
+<label for="sub_info"><input type="radio" name="p29" value="0" id="sub_info" /> c) 5.63X10<sup>4</sup> N </label>
+<label for="sub_condition"><input type="radio" name="p29" value="0" id="sub_condition" /> d) 9.00X10<sup>7</sup> N </label>
+<label for="sub_condition2"><input type="radio" name="p29" value="0" id="sub_condition2" /> e) 1.13X10<sup>4</sup> N </label>
+
+
+<h2>30) Un joven (1) de una masa de 58 Kg y una joven (2) de una masa de 46 Kg están unidos por medio de una cuerda, como se muestra en la figura. Se mueven horizontalmente sobre una pista de hielo sin fricción. El joven (1) es jalado por una fuerza horizontal de 200 N. ¿Cuál es la aceleración de ambos? </h2>
+<IMG SRC="37_ejercicio.jpg" WIDTH=400 HEIGHT=240>
+<label for="sub_string"><input type="radio" name="p30" value="0" id="sub_string"/> a) 3.45 m/s<sup>2</sup> </label>
+<label for="sub_join"><input type="radio" name="p30" value="0" id="sub_join"/> b) 4.35 m/s<sup>2</sup> </label>
+<label for="sub_info"><input type="radio" name="p30" value="0" id="sub_info" /> c) 16.67 m/s<sup>2</sup> </label>
+<label for="sub_condition"><input type="radio" name="p30" value="10" id="sub_condition" /> d) 1.92 m/s<sup>2</sup> </label>
+<label for="sub_condition2"><input type="radio" name="p30" value="0" id="sub_condition2" /> e) 2.08X10<sup>4</sup> m/s<sup>2</sup> </label>
+
+
+
+<h2>31) Un joven con una masa de 30 Kg camina sobre patines de ruedas para subir una pendiente de 10° a una velocidad de 15 Km/h. Suponiendo que no se impulsa, ¿a qué altura llegará sobre la pendiente antes de detenerse? Despreciar las pérdidas por fricción. </h2>
+<label for="sub_string"><input type="radio" name="p31" value="0" id="sub_string"/> a) 66.11 m </label>
+<label for="sub_join"><input type="radio" name="p31" value="10" id="sub_join"/> b) 5.10 m </label>
+<label for="sub_info"><input type="radio" name="p31" value="0" id="sub_info" /> c) 0.17 m </label>
+<label for="sub_condition"><input type="radio" name="p31" value="0" id="sub_condition" /> d) 0.02 m </label>
+<label for="sub_condition2"><input type="radio" name="p31" value="0" id="sub_condition2" /> e) 153 m </label>
+
+
+
+
+
+<h2>32) Un cohete se mueve a una velocidad de 60 m/s y recibe una aceleración repentina. Si su velocidad se incrementa a un valor de 504 km/h en 8 s, ¿cuál fue su aceleración promedio? </h2>
+<label for="sub_string"><input type="radio" name="p32" value="0" id="sub_string"/> a) 55.5 m/s<sup>2</sup> </label>
+<label for="sub_join"><input type="radio" name="p32" value="0" id="sub_join"/> b) 36 m/s<sup>2</sup> </label>
+<label for="sub_info"><input type="radio" name="p32" value="10" id="sub_info" /> c) 10 m/s<sup>2</sup> </label>
+<label for="sub_condition"><input type="radio" name="p32" value="0" id="sub_condition" /> d) 129600 m/s<sup>2</sup> </label>
+<label for="sub_condition2"><input type="radio" name="p32" value="0" id="sub_condition2" /> e) 36000 m/s<sup>2</sup> </label>
+
+
+
+<h2>33) Un cohete se mueve a una velocidad de 60 m/s y recibe una aceleración repentina. Si su velocidad se incrementa a un valor de 504 km/h en 8 s, ¿cuál es la distancia recorrida en ese tiempo por el cohete? </h2>
+<label for="sub_string"><input type="radio" name="p33" value="0" id="sub_string"/> a) 144.14 m </label>
+<label for="sub_join"><input type="radio" name="p33" value="0" id="sub_join"/> b) 222.22 m </label>
+<label for="sub_info"><input type="radio" name="p33" value="10" id="sub_info" /> c) 800 m </label>
+<label for="sub_condition"><input type="radio" name="p33" value="0" id="sub_condition" /> d) 0.06 m </label>
+<label for="sub_condition2"><input type="radio" name="p33" value="0" id="sub_condition2" /> e) 0.22 m </label>
+
+
+<h2>34)  La Luna gira alrededor de la Tierra con un periodo de 27.3 días a una distancia de 3.84X10<sup>8</sup> m del centro de la Tierra. Determinar su aceleración centrípeta. </h2>
+<label for="sub_string"><input type="radio" name="p34" value="0" id="sub_string"/> a) 6.89X10<sup>-5</sup> m/s<sup>2</sup> </label>
+<label for="sub_join"><input type="radio" name="p34" value="10" id="sub_join"/> b) 2.73X10<sup>-3</sup> m/s<sup>2</sup> </label>
+<label for="sub_info"><input type="radio" name="p34" value="0" id="sub_info" /> c) 8.65X10<sup>-4</sup> m/s<sup>2</sup> </label>
+<label for="sub_condition"><input type="radio" name="p34" value="0" id="sub_condition" /> d) 6.80X10<sup>-4</sup> m/s<sup>2</sup> </label>
+<label for="sub_condition2"><input type="radio" name="p34" value="0" id="sub_condition2" /> e) 367.64 m/s<sup>2</sup> </label>
+
+
+
+
+
+<h2>35) La fuerza que un cuerpo B ejerce sobre un cuerpo A es igual y opuesta a la fuerza que A ejerce sobre B. ¿Cuál de las siguientes leyes de Newton de movimiento define a esta ley? </h2>
+<label for="sub_string"><input type="radio" name="p35" value="0" id="sub_string"/> a) Primera ley de Newton </label>
+<label for="sub_join"><input type="radio" name="p35" value="0" id="sub_join"/> b) Segunda ley de Newton. </label>
+<label for="sub_info"><input type="radio" name="p35" value="10" id="sub_info" /> c) Tercera ley de Newton </label>
+<label for="sub_condition"><input type="radio" name="p35" value="0" id="sub_condition" /> d) Ley de la gravitación universal. </label>
+<label for="sub_condition2"><input type="radio" name="p35" value="0" id="sub_condition2" /> e) Ley del cuadrado inverso. </label>
+
+
+<h2>36) De la figura siguiente identifica y distingue la acción y la reacción, e indica la opción que corresponde a la "reacción". </h2>
+<IMG SRC="45_ejercicio.jpg" WIDTH=250 HEIGHT=317>
+<label for="sub_string"><input type="radio" name="p36" value="0" id="sub_string"/> a) Fuerza del hombre sobre el muro </label>
+<label for="sub_join"><input type="radio" name="p36" value="10" id="sub_join"/> b) Fuerza del muro sobre el hombre </label>
+
+
+
+
+<h2>37) Para que la cantidad de movimiento de un sistema no cambie, es decir, permanezca constante, no debe existir alguna fuerza externa. </h2>
+<label for="sub_string"><input type="radio" name="p37" value="0" id="sub_string"/> Falso </label>
+<label for="sub_join"><input type="radio" name="p37" value="10" id="sub_join"/> Verdadero </label>
+
+
+
+<h2>38) En una colisión inelástica la energía cinética total se conserva. </h2>
+<label for="sub_string"><input type="radio" name="p38" value="10" id="sub_string"/> Falso </label>
+<label for="sub_join"><input type="radio" name="p38" value="0" id="sub_join"/> Verdadero </label>
+
+
+
+
+
+<h2>39) Un automóvil (A) de 2000 Kg se mueve hacia el este (hacia la derecha) a 10 m/s choca con un automóvil (B) de 1000 Kg que se mueve hacia el oeste (hacia la izquierda) a 26 m/s. La colisión es completamente inelástica. ¿Cuál es la velocidad común después de la colisión? </h2>
+<label for="sub_string"><input type="radio" name="p39" value="0" id="sub_string"/> a) 2 m/s, dirección este  </label>
+<label for="sub_join"><input type="radio" name="p39" value="10" id="sub_join"/> b) 2 m/s, dirección oeste  </label>
+<label for="sub_info"><input type="radio" name="p39" value="0" id="sub_info" /> c) 15.33 m/s, dirección oeste  </label>
+<label for="sub_condition"><input type="radio" name="p39" value="0" id="sub_condition" /> d) 15.33 m/s, dirección este </label>
+<label for="sub_condition2"><input type="radio" name="p39" value="0" id="sub_condition2" /> e) 6 m/s, dirección oeste </label>
+
+
+
+
+<h2>40) Dos cuerpos se atraen con una fuerza que es directamente proporcional al producto de sus masas, e inversamente proporcional al cuadrado de la distancia que los separa. ¿Cuál de las siguientes leyes de Newton de movimiento corresponde a la ley mencionada anteriormente? </h2>
+<label for="sub_string"><input type="radio" name="p40" value="0" id="sub_string"/> a) Primera ley de Newton  </label>
+<label for="sub_join"><input type="radio" name="p40" value="0" id="sub_join"/> b) Segunda Ley de Newton  </label>
+<label for="sub_info"><input type="radio" name="p40" value="0" id="sub_info" /> c) Tercera Ley de Newton </label>
+<label for="sub_condition"><input type="radio" name="p40" value="10" id="sub_condition" /> d) Ley de la gravitación universal </label>
+<label for="sub_condition2"><input type="radio" name="p40" value="0" id="sub_condition2" /> e) Ley del cuadrado inverso </label>
+
+
+
+<h2>41) Una persona tiene menor peso en la Luna que en la Tierra, porque la masa de la Luna es menor a la masa de la Tierra, y por tanto será menor su fuerza gravitatoria. </h2>
+<label for="sub_string"><input type="radio" name="p41" value="0" id="sub_string"/> Falso </label>
+<label for="sub_join"><input type="radio" name="p41" value="10" id="sub_join"/> Verdadero </label>
+
+
+
+
+
+<h2>42) Las fuerzas que mantienen unidos al Sol a los planetas en sus órbitas son inversamente proporcionales al cuadrado de las distancias que los separan. </h2>
+<label for="sub_string"><input type="radio" name="p42" value="0" id="sub_string"/> Falso </label>
+<label for="sub_join"><input type="radio" name="p42" value="10" id="sub_join"/> Verdadero </label>
+
+
+
+<h2>43) Es la energía que tiene un sistema en virtud de su posición </h2>
+<label for="sub_string"><input type="radio" name="p43" value="0" id="sub_string"/> a) Energía cinética </label>
+<label for="sub_join"><input type="radio" name="p43" value="10" id="sub_join"/>  b) Energía potencial </label>
+<label for="sub_info"><input type="radio" name="p43" value="0" id="sub_info" /> c) Energía calorífica </label>
+
+
+
+
+<h2>44) Es la energía que tiene un cuerpo en virtud de su movimiento </h2>
+<label for="sub_string"><input type="radio" name="p44" value="10" id="sub_string"/> a) Energía cinética </label>
+<label for="sub_join"><input type="radio" name="p44" value="0" id="sub_join"/>  b) Energía potencial </label>
+<label for="sub_info"><input type="radio" name="p44" value="0" id="sub_info" /> c) Energía calorífica </label>
+
+
+<h2>45) El trabajo es una cantidad escalar que es igual al producto de las magnitudes del desplazamiento multiplicado por la componente de la fuerza aplicada en la dirección en la que ocurre el desplazamiento. </h2>
+<label for="sub_string"><input type="radio" name="p45" value="0" id="sub_string"/> Falso </label>
+<label for="sub_join"><input type="radio" name="p45" value="10" id="sub_join"/> Verdadero </label>
+
+
+
+<h2>46) En la figura se muestran los elementos para analizar la energía cinética de una bala. </h2>
+<IMG SRC="57_ejercicio.jpg" WIDTH=300 HEIGHT=69>
+<label for="sub_string"><input type="radio" name="p46" value="0" id="sub_string"/> Falso </label>
+<label for="sub_join"><input type="radio" name="p46" value="10" id="sub_join"/> Verdadero </label>
+
+
+
+
+<h2>47) En la figura se muestran los elementos para analizar la energía potencial de un resorte. </h2>
+<IMG SRC="58_ejercicio.jpg" WIDTH=300 HEIGHT=105>
+<label for="sub_string"><input type="radio" name="p47" value="0" id="sub_string"/> Falso </label>
+<label for="sub_join"><input type="radio" name="p47" value="10" id="sub_join"/> Verdadero </label>
+
+
+
+
+<h2>48) ¿Cuánto trabajo se necesita para empujar un automóvil de 1100 Kg con una fuerza constante desde el reposo hasta alcanzar una velocidad de 2.5 m/s, en una distancia de 30 m y contra una fuerza total de resistencia de 200 N? </h2>
+<label for="sub_string"><input type="radio" name="p48" value="0" id="sub_string"/> a) 3.44 KJ </label>
+<label for="sub_join"><input type="radio" name="p48" value="0" id="sub_join"/> b) 2.56 KJ  </label>
+<label for="sub_info"><input type="radio" name="p48" value="10" id="sub_info" /> c) 9.44 KJ </label>
+<label for="sub_condition"><input type="radio" name="p48" value="0" id="sub_condition" /> d) 6.00 KJ </label>
+<label for="sub_condition2"><input type="radio" name="p48" value="0" id="sub_condition2" /> e) 12.9 KJ </label>
+
+
+
+
+
+<h2>49) Una pelota de 200 g se lanza verticalmente hacia arriba con una velocidad inicial de 20 m/s y alcanza una altura máxima de 18 m. ¿Cuál es el trabajo hecho por la gravedad? </h2>
+<label for="sub_string"><input type="radio" name="p49" value="0" id="sub_string"/> a) 35.3 KJ </label>
+<label for="sub_join"><input type="radio" name="p49" value="0" id="sub_join"/> b) 35.3 J </label>
+<label for="sub_info"><input type="radio" name="p49" value="0" id="sub_info" /> c) -35.3 KJ </label>
+<label for="sub_condition"><input type="radio" name="p49" value="10" id="sub_condition" /> d) -35.3 J </label>
+<label for="sub_condition2"><input type="radio" name="p49" value="0" id="sub_condition2" /> e) -72 J </label>
+
+
+<h2>50) Un portaaviones tiene una masa de 9.3X10<sup>7</sup> Kg y una velocidad de 55 Km/h. ¿Cuál es el trabajo necesario para detenerlo? </h2>
+<label for="sub_string"><input type="radio" name="p50" value="0" id="sub_string"/> a) -10.9 GJ </label>
+<label for="sub_join"><input type="radio" name="p50" value="10" id="sub_join"/> b) 10.9 GJ </label>
+<label for="sub_info"><input type="radio" name="p50" value="0" id="sub_info" /> c) 141 GJ </label>
+<label for="sub_condition"><input type="radio" name="p50" value="0" id="sub_condition" /> d) -141 GJ </label>
+<label for="sub_condition2"><input type="radio" name="p50" value="0" id="sub_condition2" /> e) 21.7 GJ </label>
+
+
+
+
+<h2>51) En un instante dado, un proyectil tiene una velocidad de 216 Km/h. Si su energía potencial en ese punto es igual a la mitad de su energía cinética, ¿cuál es su altura sobre el nivel del suelo? </h2>
+<label for="sub_string"><input type="radio" name="p51" value="0" id="sub_string"/> a) 1190.20 m </label>
+<label for="sub_join"><input type="radio" name="p51" value="0" id="sub_join"/> b) 2380.41 m </label>
+<label for="sub_info"><input type="radio" name="p51" value="0" id="sub_info" /> c) 4760.82 m </label>
+<label for="sub_condition"><input type="radio" name="p51" value="0" id="sub_condition" /> d) 183.67 m </label>
+<label for="sub_condition2"><input type="radio" name="p51" value="10" id="sub_condition2" /> e) 91.84 m </label>
+
+
+<h2>52) La altura de las cataratas del Niágara es de 50 metros y caen aproximadamente 5X10<sup>6</sup> kg de agua a cada segundo. Asumiendo una eficacia del 95% al convertir la energía mecánica en energía eléctrica, ¿cuántas lámparas de 100 W se podrían encender?.  </h2>
+<label for="sub_string"><input type="radio" name="p52" value="0" id="sub_string"/> a) 24.50 millones de focos </label>
+<label for="sub_join"><input type="radio" name="p52" value="10" id="sub_join"/> b) 23.28 millones de focos </label>
+<label for="sub_info"><input type="radio" name="p52" value="0" id="sub_info" /> c) 22.05 millones de focos </label>
+<label for="sub_condition"><input type="radio" name="p52" value="0" id="sub_condition" /> d) 20.83 millones de focos </label>
+<label for="sub_condition2"><input type="radio" name="p52" value="0" id="sub_condition2" /> e) 19.60 millones de focos </label>
+
+
+
+<h2>53) Un astronauta con su traje espacial sube una escalerilla vertical en la Tierra. Más tarde hace lo mismo en la Luna, donde disminuye la energía potencial gravitatoria del astronauta. </h2>
+<label for="sub_string"><input type="radio" name="p53" value="0" id="sub_string"/> Falso </label>
+<label for="sub_join"><input type="radio" name="p53" value="10" id="sub_join"/> Verdadero </label>
+
+
+<h2>54) Un carrito de montaña rusa tiene una masa de 600 Kg incluyendo a los pasajeros. Su velocidad es de 12 m/s en el punto A, a una altura de 30 m. ¿Cuál es la velocidad en el punto B, y en el punto C, respectivamente?  </h2>
+<IMG SRC="69_ejercicio.jpg" WIDTH=450 HEIGHT=220>
+<label for="sub_string"><input type="radio" name="p54" value="0" id="sub_string"/> a) 17.90 m/s; 13.89 m/s </label>
+<label for="sub_join"><input type="radio" name="p54" value="10" id="sub_join"/> b) 22.29 m/s; 15.56 m/s </label>
+<label for="sub_info"><input type="radio" name="p54" value="0" id="sub_info" /> c) 19.10 m/s; 10.49 m/s </label>
+<label for="sub_condition"><input type="radio" name="p54" value="0" id="sub_condition" /> d) 496.80 m/s; 242 m/s </label>
+<label for="sub_condition2"><input type="radio" name="p54" value="0" id="sub_condition2" /> e) 364.81 m/s; 110.04 m/s </label>
+
+
+<h2>55) ¿Qué fuerza se necesita para detener en 1 Km un barco que tiene una masa de 8X10<sup>7</sup> Kg y se mueve a una velocidad de 55 Km/h? </h2>
+<label for="sub_string"><input type="radio" name="p55" value="0" id="sub_string"/> a) 1.21X10<sup>8</sup> N </label>
+<label for="sub_join"><input type="radio" name="p55" value="10" id="sub_join"/> b) 9.34X10<sup>6</sup> N </label>
+<label for="sub_info"><input type="radio" name="p55" value="0" id="sub_info" /> c) 1.87X10<sup>7</sup> N </label>
+<label for="sub_condition"><input type="radio" name="p55" value="0" id="sub_condition" /> d) 2.42X10<sup>8</sup> N </label>
+<label for="sub_condition2"><input type="radio" name="p55" value="0" id="sub_condition2" /> e) 9.34X10<sup>8</sup> N </label>
+
+
+<h2>56) Un martillo de 600 g tiene una velocidad de 108 Km/h inmediatamente antes de golpear la cabeza de un clavo. ¿Qué trabajo realizó la cabeza del martillo? Asumir que al momento del golpe el martillo detiene su movimiento.</h2>
+<label for="sub_string"><input type="radio" name="p56" value="0" id="sub_string"/> a) 3.50X10<sup>6</sup> N m </label>
+<label for="sub_join"><input type="radio" name="p56" value="10" id="sub_join"/> b) 2.70X10<sup>2</sup> N m </label>
+<label for="sub_info"><input type="radio" name="p56" value="0" id="sub_info" /> c) 7.00X10<sup>6</sup> N m </label>
+<label for="sub_condition"><input type="radio" name="p56" value="0" id="sub_condition" /> d) 5.40X10<sup>2</sup> N m </label>
+<label for="sub_condition2"><input type="radio" name="p56" value="0" id="sub_condition2" /> e) 3.50X10<sup>3</sup> N m </label>
+
+
+
+<h2>57) La potencia es una cantidad escalar. </h2>
+<label for="sub_string"><input type="radio" name="p57" value="0" id="sub_string"/> Falso </label>
+<label for="sub_join"><input type="radio" name="p57" value="10" id="sub_join"/> Verdadero </label>
+
+
+
+<h2>58) La potencia se puede definir como la razón de cambio del trabajo respecto al tiempo P = ΔW/Δt.  </h2>
+<label for="sub_string"><input type="radio" name="p58" value="0" id="sub_string"/> Falso </label>
+<label for="sub_join"><input type="radio" name="p58" value="10" id="sub_join"/> Verdadero </label>
+
+
+
+<h2>59) La fricción es un tipo de energía. </h2>
+<label for="sub_string"><input type="radio" name="p59" value="10" id="sub_string"/> Falso </label>
+<label for="sub_join"><input type="radio" name="p59" value="0" id="sub_join"/> Verdadero </label>
+
+
+
+<h2>60) Una pelota de 90 g de masa tiene una velocidad inicial de 36 Km/h y disminuye a una velocidad de 28.8 Km/h después de 12 m de rodamiento. ¿Cuál es la fuerza de fricción sobre la pelota? </h2>
+<label for="sub_string"><input type="radio" name="p60" value="0" id="sub_string"/> a) 1.750 N </label>
+<label for="sub_join"><input type="radio" name="p60" value="0" id="sub_join"/> b) 1749.6 N </label>
+<label for="sub_info"><input type="radio" name="p60" value="0" id="sub_info" /> c) 135 N </label>
+<label for="sub_condition"><input type="radio" name="p60" value="10" id="sub_condition" /> d) 0.135 N </label>
+<label for="sub_condition2"><input type="radio" name="p60" value="0" id="sub_condition2" /> e) 0.153 N </label>
+
+
+
+<h1><h1>→Fin de las preguntas</h1>
+
+<p>Antes de dar click en el botón para calificar, por favor revise que todas sus respuestas estén seleccionadas. 
+
+<p>En caso de que alguna o algunas preguntas queden sin responder, el sistema "borrará" todas las respuestas seleccionadas. Para corregir esta situación, es suficiente con regresar a la página dando click en el botón ← (regresar una página) y ahí estarán todas las opciones seleccionadas sin ningún problema, sin perderse y como habían sido seleccionadas.
+
+<p>Si es posible, guarde o tenga anotadas sus respuestas en un lugar seguro. </p>
+
+<button type="submit" value="Submit">Calificar</button>
+
+</form>
+
+<p>En escala de 0 a 10, la calificación es: <span id="grade">__</span></p> 
+<p id="grade2"></p>
+
+
+
+<script>
+document.getElementById("form1").onsubmit=function() {
+              p1 = parseInt(document.querySelector('input[name = "p1"]:checked').value);
+	    p2 = parseInt(document.querySelector('input[name = "p2"]:checked').value);
+	    p3 = parseInt(document.querySelector('input[name = "p3"]:checked').value);
+	    p4 = parseInt(document.querySelector('input[name = "p4"]:checked').value);
+	    p5 = parseInt(document.querySelector('input[name = "p5"]:checked').value);
+	    p6 = parseInt(document.querySelector('input[name = "p6"]:checked').value);
+	    p7 = parseInt(document.querySelector('input[name = "p7"]:checked').value);
+	    p8 = parseInt(document.querySelector('input[name = "p8"]:checked').value);
+	    p9 = parseInt(document.querySelector('input[name = "p9"]:checked').value);
+	    p10 = parseInt(document.querySelector('input[name = "p10"]:checked').value);
+	    p11 = parseInt(document.querySelector('input[name = "p11"]:checked').value);
+	    p12 = parseInt(document.querySelector('input[name = "p12"]:checked').value);
+	    p13 = parseInt(document.querySelector('input[name = "p13"]:checked').value);
+	    p14 = parseInt(document.querySelector('input[name = "p14"]:checked').value);
+	    p15 = parseInt(document.querySelector('input[name = "p15"]:checked').value);
+	    p16 = parseInt(document.querySelector('input[name = "p16"]:checked').value);
+	    p17 = parseInt(document.querySelector('input[name = "p17"]:checked').value);
+	    p18 = parseInt(document.querySelector('input[name = "p18"]:checked').value);
+	    p19 = parseInt(document.querySelector('input[name = "p19"]:checked').value);
+	    p20 = parseInt(document.querySelector('input[name = "p20"]:checked').value);
+	    p21 = parseInt(document.querySelector('input[name = "p21"]:checked').value);
+	    p22 = parseInt(document.querySelector('input[name = "p22"]:checked').value);
+	    p23 = parseInt(document.querySelector('input[name = "p23"]:checked').value);
+	    p24 = parseInt(document.querySelector('input[name = "p24"]:checked').value);
+	    p25 = parseInt(document.querySelector('input[name = "p25"]:checked').value);
+	    p26 = parseInt(document.querySelector('input[name = "p26"]:checked').value);
+	    p27 = parseInt(document.querySelector('input[name = "p27"]:checked').value);
+	    p28 = parseInt(document.querySelector('input[name = "p28"]:checked').value);
+	    p29 = parseInt(document.querySelector('input[name = "p29"]:checked').value);
+	    p30 = parseInt(document.querySelector('input[name = "p30"]:checked').value);
+	    p31 = parseInt(document.querySelector('input[name = "p31"]:checked').value);
+	    p32 = parseInt(document.querySelector('input[name = "p32"]:checked').value);
+	    p33 = parseInt(document.querySelector('input[name = "p33"]:checked').value);
+	    p34 = parseInt(document.querySelector('input[name = "p34"]:checked').value);
+	    p35 = parseInt(document.querySelector('input[name = "p35"]:checked').value);
+	    p36 = parseInt(document.querySelector('input[name = "p36"]:checked').value);
+	    p37 = parseInt(document.querySelector('input[name = "p37"]:checked').value);
+	    p38 = parseInt(document.querySelector('input[name = "p38"]:checked').value);
+	    p39 = parseInt(document.querySelector('input[name = "p39"]:checked').value);
+	    p40 = parseInt(document.querySelector('input[name = "p40"]:checked').value);
+	    p41 = parseInt(document.querySelector('input[name = "p41"]:checked').value);
+	    p42 = parseInt(document.querySelector('input[name = "p42"]:checked').value);
+	    p43 = parseInt(document.querySelector('input[name = "p43"]:checked').value);
+	    p44 = parseInt(document.querySelector('input[name = "p44"]:checked').value);
+	    p45 = parseInt(document.querySelector('input[name = "p45"]:checked').value);
+	    p46 = parseInt(document.querySelector('input[name = "p46"]:checked').value);
+	    p47 = parseInt(document.querySelector('input[name = "p47"]:checked').value);
+	    p48 = parseInt(document.querySelector('input[name = "p48"]:checked').value);
+	    p49 = parseInt(document.querySelector('input[name = "p49"]:checked').value);
+	    p50 = parseInt(document.querySelector('input[name = "p50"]:checked').value);
+	    p51 = parseInt(document.querySelector('input[name = "p51"]:checked').value);
+	    p52 = parseInt(document.querySelector('input[name = "p52"]:checked').value);
+	    p53 = parseInt(document.querySelector('input[name = "p53"]:checked').value);
+	    p54 = parseInt(document.querySelector('input[name = "p54"]:checked').value);
+	    p55 = parseInt(document.querySelector('input[name = "p55"]:checked').value);
+	    p56 = parseInt(document.querySelector('input[name = "p56"]:checked').value);
+	    p57 = parseInt(document.querySelector('input[name = "p57"]:checked').value);
+	    p58 = parseInt(document.querySelector('input[name = "p58"]:checked').value);
+	    p59 = parseInt(document.querySelector('input[name = "p59"]:checked').value);
+	    p60 = parseInt(document.querySelector('input[name = "p60"]:checked').value);
+
+
+
+
+	   result = (p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8 + p9 + p10 + p11 + p12 + p13 + p14 + p15 + p16 + p17 + p18 + p19 + p20 + p21 + p22 + p23 + p24 + p25 + p26 + p27 + p28 + p29 + p30 + p31 + p32 + p33 + p34 + p35 + p36 + p37 + p38 + p39 + p40 + p41 + p42 + p43 + p44 + p45 + p46 + p47 + p48 + p49 + p50 + p51 + p52 + p53 + p54 + p55 + p56 + p57 + p58 + p59 + p60)/60;
+
+
+
+	document.getElementById("grade").innerHTML = result;
+
+ grading = [
+	   {score:00/60,feedback:"0 aciertos obtenidos. INSUFICIENTE"},
+	   {score:10/60,feedback:"1 acierto obtenido. INSUFICIENTE"},
+	   {score:20/60,feedback:"2 aciertos obtenidos. INSUFICIENTE"},
+	   {score:30/60,feedback:"3 aciertos obtenidos. INSUFICIENTE"},
+	   {score:40/60,feedback:"4 aciertos obtenidos. INSUFICIENTE"},
+	   {score:50/60,feedback:"5 aciertos obtenidos. INSUFICIENTE"},
+	   {score:60/60,feedback:"6 aciertos obtenidos. INSUFICIENTE"},
+	   {score:70/60,feedback:"7 aciertos obtenidos. INSUFICIENTE"},
+	   {score:80/60,feedback:"8 aciertos obtenidos. INSUFICIENTE"},
+	   {score:90/60,feedback:"9 aciertos obtenidos. INSUFICIENTE"},
+	   {score:100/60,feedback:"10 aciertos obtenidos. INSUFICIENTE"},
+	   {score:110/60,feedback:"11 aciertos obtenidos. INSUFICIENTE"},
+	   {score:120/60,feedback:"12 aciertos obtenidos. INSUFICIENTE"},
+	   {score:130/60,feedback:"13 aciertos obtenidos. INSUFICIENTE"},
+	   {score:140/60,feedback:"14 aciertos obtenidos. INSUFICIENTE"},
+	   {score:150/60,feedback:"15 aciertos obtenidos. INSUFICIENTE"},
+	   {score:160/60,feedback:"16 aciertos obtenidos. INSUFICIENTE"},
+	   {score:170/60,feedback:"17 aciertos obtenidos. INSUFICIENTE"},
+	   {score:180/60,feedback:"18 aciertos obtenidos. INSUFICIENTE"},
+	   {score:190/60,feedback:"19 aciertos obtenidos. INSUFICIENTE"},
+	   {score:200/60,feedback:"20 aciertos obtenidos. INSUFICIENTE"},
+	   {score:210/60,feedback:"21 aciertos obtenidos. INSUFICIENTE"},
+	   {score:220/60,feedback:"22 aciertos obtenidos. INSUFICIENTE"},
+	   {score:230/60,feedback:"23 aciertos obtenidos. INSUFICIENTE"},
+	   {score:240/60,feedback:"24 aciertos obtenidos. INSUFICIENTE"},
+	   {score:250/60,feedback:"25 aciertos obtenidos. INSUFICIENTE"},
+	   {score:260/60,feedback:"26 aciertos obtenidos. INSUFICIENTE"},
+	   {score:270/60,feedback:"27 aciertos obtenidos. INSUFICIENTE"},
+	   {score:280/60,feedback:"28 aciertos obtenidos. INSUFICIENTE"},
+	   {score:290/60,feedback:"29 aciertos obtenidos. INSUFICIENTE"},
+	   {score:300/60,feedback:"30 aciertos obtenidos. INSUFICIENTE"},
+	   {score:310/60,feedback:"31 aciertos obtenidos. INSUFICIENTE"},
+	   {score:320/60,feedback:"32 aciertos obtenidos. INSUFICIENTE"},
+	   {score:330/60,feedback:"33 aciertos obtenidos. SUFICIENTE"},
+	   {score:340/60,feedback:"34 aciertos obtenidos. SUFICIENTE"},
+	   {score:350/60,feedback:"35 aciertos obtenidos. SUFICIENTE"},
+	   {score:360/60,feedback:"36 aciertos obtenidos. SUFICIENTE"},
+	   {score:370/60,feedback:"37 aciertos obtenidos. SUFICIENTE"},
+	   {score:380/60,feedback:"38 aciertos obtenidos. SUFICIENTE"},
+	   {score:390/60,feedback:"39 aciertos obtenidos. REGULAR"},
+	   {score:400/60,feedback:"40 aciertos obtenidos. REGULAR"},
+	   {score:410/60,feedback:"41 aciertos obtenidos. REGULAR"},
+	   {score:420/60,feedback:"42 aciertos obtenidos. REGULAR"},
+	   {score:430/60,feedback:"43 aciertos obtenidos. REGULAR"},
+	   {score:440/60,feedback:"44 aciertos obtenidos. REGULAR"},
+	   {score:450/60,feedback:"45 aciertos obtenidos. BIEN"},
+	   {score:460/60,feedback:"46 aciertos obtenidos. BIEN"},
+	   {score:470/60,feedback:"47 aciertos obtenidos. BIEN"},
+	   {score:480/60,feedback:"48 aciertos obtenidos. BIEN"},
+	   {score:490/60,feedback:"49 aciertos obtenidos. BIEN"},
+	   {score:500/60,feedback:"50 aciertos obtenidos. BIEN"},
+	   {score:510/60,feedback:"51 aciertos obtenidos. MUY BIEN"},
+	   {score:520/60,feedback:"52 aciertos obtenidos. MUY BIEN"},
+	   {score:530/60,feedback:"53 aciertos obtenidos. MUY BIEN"},
+	   {score:540/60,feedback:"54 aciertos obtenidos. MUY BIEN"},
+	   {score:550/60,feedback:"55 aciertos obtenidos. MUY BIEN"},
+	   {score:560/60,feedback:"56 aciertos obtenidos. MUY BIEN"},
+	   {score:570/60,feedback:"57 aciertos obtenidos. EXCELENTE"},
+	   {score:580/60,feedback:"58 aciertos obtenidos. EXCELENTE"},
+	   {score:590/60,feedback:"59 aciertos obtenidos. EXCELENTE"},
+	   {score:600/60,feedback:"60 aciertos obtenidos. EXCELENTE"}
+	   ];
+
+
+for(i=0; i<grading.length; i++) {
+    if(result == grading[i].score) {
+    result2 = grading[i].feedback + "<br /> <br /> Respuestas Correctas: <br /> <br /> 1: La primera ley de Newton es la que puede explicar este caso, ya que si el pasajero se encuentra en reposo antes del choque, entonces durante y después del choque el pasajero tenderá a permanecer en la misma posición de reposo. La opción correcta es el inciso b). <br /> <br />  2: Verdadero, porque en un marco de referencia inercial la primera ley de Newton es válida para este caso. <br /> <br />  3: Verdadero. Porque en un marco de referencia inercial un cuerpo que no sufra una fuerza neta, se encontrará siempre a velocidad constante o en reposo. <br /> <br />  4: La opción correcta para este problema es el inciso d). <br /> <br />  5: Verdadero. Porque tanto la rapidez como la dirección son constantes, y por lo tanto la velocidad es constante. Esto implica que la aceleración es cero. <br /> <br />  6: La opción correcta se encuentra en el inciso a). Porque la rapidez disminuye segundo a segundo en, vf - vi = g (t + 1) – g t = (9.81 m/s<sup>2</sup>) (1 s) =  9.81 m/s. <br /> <br />  7: La respuesta correcta está en el inciso b). La rapidez aumenta segundo a segundo en, vf - vi = g (t + 1) – g t = (-9.81 m/s<sup>2</sup>)(1 s) =  -9.81 m/s. <br /> <br />  8: La velocidad en el punto más alto es 0 m/s. La opción correcta es el inciso a). <br /> <br />  9: Falso. Son magnitudes escalares, ya que no requieren una dirección para su determinación. <br /> <br />  10: Falso. Son magnitudes vectoriales y requieren una dirección para su determinación. <br /> <br />  11: Verdadero. Porque la definición operacional de ímpetu es la de el producto de su masa por su velocidad. El ímpetu o cantidad de movimiento es una magnitud vectorial. <br /> <br />  12: La opción correcta es inciso b), porque el ímpetu lineal se obtiene mediante la fórmula p = mv = (70 kg) (10 m/s) = 700 kg m/s. <br /> <br />  13: La opción correcta es el inciso a), porque de la fórmula del ímpetu tenemos que la velocidad es v = p/m = (1000 kg m/s) / (20 X 10<sup>-3</sup> kg) = 50 000 m/s. <br /> <br />  14: La opción correcta es la del inciso a), porque de la fórmula de ímpetu tenemos que la velocidad es v = p/m = (1000 Kg m/s) / (2000 Kg) = 0.50 m/s. <br /> <br />  15: La opción correcta es la del inciso e), ya que el ímpetu antes de que el pez pequeño sea comido es de 5 kg m/s. La velocidad después de que el pez pequeño es comido es v = p/m = (5 kg m/s)/(5 kg + 1 kg)= 5/6 m/s = 0.83 m/s. <br /> <br />  16: La opción correcta es el inciso a), ya que el ímpetu antes de que la caja caiga en el carrito es de 5 kg m/s. La velocidad después de que la caja cae en el carrito es v = p/m = (5 kg m/s)/(0.2 kg + 2.5 kg) = (5 Kg m/s )/ (2.7 Kg) = 1.85 m/s. <br /> <br />  17: La opción correcta es la del inciso b), ya que el ímpetu antes de la colisión es de 6 kg m/s. La velocidad después de la colisión v = p/m = (6 kg m/s)/(3 kg + 2 kg) = (6 Kg m/s )/ (5 Kg) = 1.20 m/s. <br /> <br />  18: Verdadero. Porque una fuerza implica un cambio en el ímpetu o cantidad de movimiento, F = m (ΔV/ΔT) = m (VF-VI)/(ΔT) = mVF/ΔT – mVI/ΔT = PF/ΔT – PI/ΔT = ΔP/ΔT. <br /> <br />  19: La opción correcta es la de el inciso c), porque la fuerza es igual a F = m (a) = m (∆v)/t = m (vf - vi)/t = (250 kg)(28 m/s - 6 m/s)/(60 s) = 91.67 N. <br /> <br />  20: Verdadero. Porque a medida que se avanza en el tiempo, la distancia al origen es mayor cada vez. <br /> <br />  21: La gráfica que representa mejor la variación de la pelota con el tiempo se muestra en el inciso e). La velocidad inicial decrece con el tiempo hasta llegar a una velocidad igual a cero en el punto más alto, después adquiere una velocidad negativa. <br /> <br />  22: Falso. Su movimiento corresponde a un movimiento rectilíneo uniforme y no a un movimiento acelerado. <br /> <br />  23: Falso. Porque la segunda ley de Newton, es válida en marcos de referencia inerciales. <br /> <br />  24: Verdadero. Porque existe una fuerza centrípeta constante, y por lo tanto una aceleración, que obliga al objeto a seguir una trayectoria circular.  <br /> <br />  25: La opción correcta es el inciso a), ya que la fuerza centrípeta es FC = mV<sup>2</sup>/r, donde la masa del electrón es de 9.109X10<sup>-31</sup> kg. FC = (9.1X10<sup>-31</sup>)(2.2X10<sup>6</sup>)<sup>2</sup>/(5.3X10<sup>-11</sup>) = 8.3X10<sup>-8</sup> N. <br /> <br />  26: Verdadero. Porque la variación del ímpetu respecto al tiempo ∆p/∆t = ∆(mv)/∆t = (∆m/∆t)v + m(∆v/∆t), y si la masa es constante entonces se tiene que ∆p/∆t = m(∆v/∆t) = ma = F. <br /> <br />  27: La velocidad promedio es de 13.67 km/h, ya que si el tiempo es 2 h 49 min = 2.82 h, entonces V = (38.5 km/h)/(2.82 h) = 13.67 km/h. La opción correcta es el inciso d). <br /> <br />  28: La opción correcta es la del inciso c). La aceleración es a = (250 km/h - 0 km/h)/(2.2 s) = (69.44 m/s)/(2.2 s) = 31.57 m/s<sup>2</sup>. Entonces la fuerza es F = m a = (12500 kg)(31.57 m/s<sup>2</sup>) = 3.95X10<sup>5</sup> N. <br /> <br />  29: La solución a este problema es el inciso b). Empleando la formula (Vf)<sup>2</sup> - (Vi)<sup>2</sup> = 2 a (df - di), sabemos que la aceleración está dada por a = (Vi)<sup>2</sup>/(2 di) = (180 Km/h)<sup>2</sup>/(2 X 40 m) = (50 m/s)<sup>2</sup>/(80 m) = 31.25 m/s<sup>2</sup>, y entonces la fuerza está dada por F = m a = (12500 Kg)(31.25 m/s<sup>2</sup>) = 3.91X10<sup>5</sup> N. <br /> <br />  30: La opción correcta es el inciso d), ya que según la segunda ley de Newton, sabemos que a = F/M , entonces a = 200 N/(58 Kg + 46 Kg) = 1.92 m/s<sup>2</sup>. <br /> <br />  31: La altura a la que llegará es de 5.10 m, como se indica en el inciso b). Empleando la formula (Vf)<sup>2</sup> - (Vi)<sup>2</sup> = 2 a (df - di), sabemos que la distancia está dada por d = (Vi)<sup>2</sup>/(2 a), donde en este caso la aceleración corresponde a la componente vertical de la gravedad a = g senθ, y así entonces d = (Vi)<sup>2</sup>/(2 g senθ) = (15 Km/h)<sup>2</sup>/(2X9.8 m/s<sup>2</sup> X sen10°) = (4.16 m/s)<sup>2</sup>/(2 X 9.8 m/s<sup>2</sup> X sen10°) = 5.10 m. <br /> <br />  32: La aceleración promedio es de 10 m/s<sup>2</sup>, como se indica en el inciso c). La aceleración está dada por a = (504 km/h - 216 km/h)/8 s = (140 m/s – 60 m/s)/8 s = 10 m/s<sup>2</sup>. <br /> <br />  33: La distancia que recorre el cohete es de 800 m, como se indica en el inciso c). La aceleración está dada por a = (504 km/h - 216 km/h)/8 s = (140 m/s – 60 m/s)/8 s = 10 m/s<sup>2</sup>. Empleando la formula (Vf)<sup>2</sup> - (Vi)<sup>2</sup> = 2 a (d), sabemos que la distancia está dada por d = ((Vf)<sup>2</sup> - (Vi)<sup>2</sup>)/(2 a) = (140<sup>2</sup> – 60<sup>2</sup>)/(2 X 10) m = 800 m. <br /> <br />  34: La aceleración centrípeta es de 2.73X10<sup>-3</sup> m/s<sup>2</sup>, como se indica en el inciso b). La aceleración centrípeta está dada por a = v<sup>2</sup>/r. El periodo que toma la Luna en dar una vuelta, es decir recorrer una distancia de 2πr es T. Entonces la aceleración centrípeta es a = 4π<sup>2</sup>r/T<sup>2</sup>. Sustituyendo valores tenemos a = 2.72X10<sup>-3</sup> m/s<sup>2</sup>, donde r = 3.84X10<sup>8</sup> m, y T = 27.3 días = 2 358 720 s. <br /> <br />  35: La respuesta se encuentra en el inciso c), ya que la tercera ley de Newton afirma que la fuerza que B ejerce sobre A es igual y opuesta a la fuerza que A ejerce sobre B. <br /> <br />  36: La opción correcta corresponde al inciso b). <br /> <br />  37: Verdadero. Porque el principio de conservación de la cantidad de movimiento afirma que si una fuerza exterior neta sobre un sistema es cero, entonces, la cantidad de movimiento total es constante. <br /> <br />  38: Falso. Porque la energía cinética se conserva en las colisiones elásticas, más no así en las inelásticas. <br /> <br />  39: La velocidad común después de la colisión es de 2 m/s dirección oeste como se indica en el inciso b). Ya que el automóvil (A) tiene una cantidad de movimiento de PA = (2 000 Kg)(10 m/s) = 20 000 Kg m/s dirección este, y el automóvil (B) tiene una cantidad de movimiento PB = (1 000 Kg)(26 m/s) = 26 000 Kg m/s dirección oeste. De esta forma la cantidad de movimiento inicial y tomando en cuenta las direcciones de los vectores de cantidad de movimiento es PI = PA – PB = 6000 Kg m/s dirección oeste. La cantidad de movimiento final está dada por PF = (2000 Kg + 1000 Kg)V; y por la conservación de la cantidad de movimiento PI = PF. De esta manera V = (6000 Kg m/s)/(3000 Kg) dirección oeste = 2 m/s dirección oeste. <br /> <br />  40: La ley de la gravitación universal, establece que dos cuerpos se atraen con una fuerza que es directamente proporcional al producto de sus masas, e inversamente proporcional al cuadrado de la distancia que los separa. La opción correcta es el inciso d). <br /> <br />  41: Verdadero. Porque la masa y el radio de la Luna son menores que los de la Tierra y por lo tanto el campo gravitatorio generado por la Luna es menor que el de la Tierra.  <br /> <br />  42: Verdadero. Corresponde a la aplicación de la ley de la gravitación universal. <br /> <br />  43: Energía potencial, como se indica en el inciso b). <br /> <br />  44: Energía cinética, como se indica en el inciso a). <br /> <br />  45: Verdadero, corresponde a la definición de trabajo en mecánica clásica. <br /> <br />  46: Verdadero. Se trata de un caso con elementos para analizar la energía en virtud de su movimiento. <br /> <br />  47: Verdadero. Se trata de un caso con elementos para analizar la energía en virtud de su posición. <br /> <br />  48: El trabajo necesario para empujar el automóvil es de 9.44 KJ. Del teorema trabajo-energía sabemos que: WNETO = FNETA d = ΔEC, entonces WNETO  = (1/2)(1100 Kg)(2.5 m/s)<sup>2</sup> = 3437.5 J = 3.44 KJ. A esta cantidad se debe sumar el trabajo necesario para vencer a la fuerza de resistencia. Este trabajo es igual a (200 N)(30 m) = 6 000 J = 6 KJ. Por lo tanto el trabajo total necesario es de 9.44 KJ, como se indica en el inciso c). <br /> <br /> 49: El trabajo hecho por la gravedad es de –35.3 J, ya que WNETO = F h = m g h = (.2 Kg)(-9.8 m/s<sup>2</sup>)(18 m) = -35.3 J. La opción correcta es el inciso d). <br /> <br /> 50: El trabajo necesario para detenerlo es de 10.9 GJ, como se muestra en el inciso b). Aplicamos el teorema trabajo-energía para encontrar el trabajo: WNETO = (1/2)(9.3X10<sup>7</sup> Kg)(15.28 m/s)<sup>2</sup> – (1/2)(9.3X10<sup>7</sup> Kg)(0 m/s)<sup>2</sup> = 10.9 GJ = 10.9X10<sup>9</sup> J. <br /> <br /> 51: Igualamos la energía potencial a la mitad de la energía cinética, esto es mgh = ((1/2)mv<sup>2</sup>)/2 = (1/4)mv<sup>2</sup>, lo cual implica que la altura es h = (1/4)v<sup>2</sup>/g, donde v = 216 Km/h = 60 m/s. Sustituyendo valores tenemos h = (1/4)(60 m/s)<sup>2</sup>/(9.8 m/s<sup>2</sup>) = 91.84 m, como se muestra en el inciso e). <br /> <br /> 52: Se podrían encender 23.28 millones de focos, ya que la energía potencial que pierde el agua por segundo es mgh/t = (5X10<sup>6</sup> kg)(9.8 m/s<sup>2</sup>)(50 m)/(1 seg) = 2.45X10<sup>9</sup> J/s = 2.38X10<sup>9</sup> W. El 95% de este valor es de 2.33X10<sup>9</sup> J/s = 2.33X10<sup>9</sup> W, entonces con esta energía se podrían encender 2.33X10<sup>7</sup> focos de 100 W. La opción correcta corresponde al inciso b). <br /> <br /> 53: Verdadero. Ya que la energía potencial gravitatoria del astronauta es menor en la Luna que en la Tierra, debido a que el valor de la gravedad lunar es menor que el valor de la gravedad terrestre. <br /> <br /> 54: Por la conservación de la energía sabemos que: energía total inicial = energía total final, donde la energía total = (1/2)mv<sup>2</sup> + mgh = energía cinética + energía potencial. Esto significa que para los puntos A, B y C tenemos (1/2)mVA<sup>2</sup> + mghA = (1/2)mVB<sup>2</sup> + mghC = (1/2)mVC<sup>2</sup> + mghC. Sin pérdida de generalidad y después de varios despejes tenemos: VB = (2g (hA – hB) + VA<sup>2</sup>)<sup>1/2</sup>. Sustituyendo los valores tenemos VB = 22.29 m/s. Similarmente, VC = (2g (hB – hC) + VB<sup>2</sup>)<sup>1/2</sup> = 15.56 m/s. La opción correcta es el inciso b). <br /> <br /> 55: Por el teorema del trabajo-energía sabemos que WNETO = ΔEC, el trabajo total es igual al cambio en la energía cinética. Esto significa que F d = (1/2)mV<sup>2</sup>, entonces  F = mV<sup>2</sup>/(2 d). Sustituyendo valores tenemos F = (8X10<sup>7</sup> Kg)(15.28 m/s)<sup>2</sup>/(2 X 1000 m) = 9.34X10<sup>6</sup> N. Por lo que la opción correcta es el inciso b). <br /> <br /> 56: Por el teorema del trabajo-energía se sabe que WNETO = ΔEC, el trabajo total es igual al cambio en la energía cinética. Esto significa que el trabajo es W = (1/2)(0.6 Kg)(30 m/s)<sup>2</sup> - (1/2)(0.6 Kg)(0 m/s)<sup>2</sup> = 270 N m = 2.70X10<sup>2</sup> N m. Por lo que el inciso b) es la respuesta correcta. <br /> <br /> 57: Verdadero. Pues se puede definir como el producto punto de los vectores de fuerza por velocidad, que es una cantidad escalar. <br /> <br /> 58: Verdadero. La definición más general de potencia es la razón de energía transferida de un cuerpo a otro, o la razón a la cual la energía es transformada de una forma a otra. <br /> <br /> 59: Falso. La fricción es una fuerza de contacto que se opone al movimiento relativo de dos superficies. No es ningún tipo de energía. <br /> <br /> 60: La fuerza de fricción es 0.135 N como se indica en el inciso d). Sabemo que el trabajo total es igual al cambio en la energía cinética. Esto significa que (F fricción)(12 m) = (1/2)(0.09 Kg)(10 m/s)<sup>2</sup> - (1/2)(0.09 Kg)(8 m/s)<sup>2</sup>. Entonces la fuerza de fricción es F fricción = 0.135 N.";
+	  }
+	  }
+
+
+
+
+ document.getElementById("grade2").innerHTML = result2;
+
+return false; // required to not refresh the page; just leave this here
+} //this ends the submit function
+
+
+
+
+</script>
+
+
+</div>
+</body>
+</html>
+
+
+
